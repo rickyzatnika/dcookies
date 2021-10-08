@@ -1,0 +1,294 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 60px;
+  background: #ffffff;
+  padding: 6px 4px;
+  height: 100%;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease;
+  z-index: 99;
+}
+.sidebar.active {
+  width: 250px;
+  transition: all 0.6s ease;
+}
+
+.sidebar .logo_content .logo {
+  display: flex;
+  color: #f6e8b1;
+  text-shadow: tan 1px 0 3px;
+  height: 50px;
+  width: 100%;
+  font-size: 30px;
+  margin-left: 0;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar.active .logo_content .logo {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.sidebar .logo_content .logo .logo_name {
+  font-size: 29px;
+  font-weight: 800;
+  margin: 0;
+  transition: all 2s ease;
+}
+.sidebar .logo_name {
+  padding-left: 25px;
+  transition: all 2s ease;
+}
+.logo_name span {
+  color: #634832;
+}
+
+.sidebar #btn {
+  position: absolute;
+  color: rgb(68, 68, 68);
+  left: 50%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+#btn:hover {
+  color: #634832;
+}
+.sidebar.active #btn {
+  left: 87%;
+}
+
+.sidebar i {
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 53px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.sidebar ul li {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  line-height: 5px;
+  margin-top: 15px;
+}
+.sidebar ul li a {
+  color: #634832;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+  white-space: nowrap;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+.sidebar ul li a:hover {
+  color: #f6e8b1;
+  background: #5c422d;
+}
+
+.sidebar .link_name {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.sidebar.active .link_name {
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 1s ease;
+}
+.sidebar ul li .tooltip {
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  left: 131px;
+  top: 0;
+  transform: translate(-46%, -50%);
+  border-radius: 10px;
+  height: 35px;
+  width: 162px;
+  background: #f6edcf;
+  line-height: 35px;
+  text-align: center;
+  font-size: 13px;
+  display: block;
+  color: rgb(58, 58, 58);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.8s ease;
+  text-shadow: 0px 0px 15px rgba(82, 82, 82, 0.144);
+}
+.sidebar.active ul li .tooltip {
+  display: none;
+  transition: all 0.8s ease;
+}
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+  top: 50%;
+}
+.home_content {
+  position: absolute;
+  height: 100%;
+  width: calc(100% = 100%);
+  left: 65px;
+  transition: all 0.2s ease;
+}
+
+.sidebar.active ~ .home_content {
+  left: 300px;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.sosial_media i {
+  align-items: center;
+  opacity: 0;
+  font-size: 30px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.sidebar.active .sosial_media i {
+  opacity: 1;
+  transition: all 3s ease;
+}
+.sosial_media .bxl-instagram-alt {
+  color: rgb(240, 25, 107);
+}
+.sosial_media .bxl-twitter {
+  color: rgb(56, 195, 250);
+}
+
+.sidebar.active .profile {
+  opacity: 1;
+  transition: all 4s ease;
+}
+.profile {
+  opacity: 0;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+
+  opacity: 0.9;
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  margin-left: 57px;
+}
+.profile p {
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  color: #959595;
+  margin-left: 28px;
+  margin-top: 25px;
+  letter-spacing: 0.9mm;
+}
+/* akhir navside */
+/* home content */
+
+.container_judul {
+  background-color: #f5efd6;
+  position: fixed;
+  width: 100%;
+  height: 58px;
+  mix-blend-mode: multiply;
+}
+
+.images h1 {
+  font-size: 25px;
+  font-weight: 800;
+  color: #634832;
+  text-shadow: rgb(245, 220, 174) 2px 0 5px;
+  padding: 5px;
+  text-align: center;
+}
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Dekstop Version */
+@media (min-width: 992px) {
+  .home_content {
+    position: absolute;
+    height: 100%;
+    width: calc(100% = 100%);
+    left: 65px;
+    transition: all 1s ease;
+  }
+
+  .sidebar.active ~ .home_content {
+    left: 300px;
+    opacity: 1;
+    transition: all 1s ease;
+  }
+}
