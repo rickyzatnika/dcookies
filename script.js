@@ -53,4 +53,4 @@ document.addEventListener('click', function (e) {
     myModal.show();
   }
 });
-AOS.init();
+
