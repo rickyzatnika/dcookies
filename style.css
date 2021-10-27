@@ -216,19 +216,19 @@ body {
 }
 
 .carousel-caption h1 {
-  font-size: 3.2em;
+  font-size: 1em;
   font-family: 'Pacifico', cursive;
 
   text-shadow: 3px 3px 5px #311906;
-  letter-spacing: 10px;
+  letter-spacing: 3px;
   margin-bottom: -0.9%;
   padding: 2px;
   color: #fff;
   font-weight: bold;
 }
 .carousel-caption p {
-  font-size: 1.2em;
-  letter-spacing: 5px;
+  font-size: 0.4em;
+  letter-spacing: 1px;
   background-color: #75441f;
   border-radius: 1px 50px 1px 50px;
   color: #f1bc59;
@@ -568,6 +568,24 @@ input[type='submit']:hover {
   .sidebar.active ~ .home_content {
     display: block;
   }
+  .carousel-caption h1 {
+    font-size: 3.2em;
+    font-family: 'Pacifico', cursive;
+
+    text-shadow: 3px 3px 5px #311906;
+    letter-spacing: 10px;
+    margin-bottom: -0.9%;
+    padding: 2px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .carousel-caption p {
+    font-size: 1.2em;
+    letter-spacing: 5px;
+    background-color: #75441f;
+    border-radius: 1px 50px 1px 50px;
+    color: #f1bc59;
+  }
 
   .gallery h1 {
     font-size: 40px;
@@ -730,5 +748,6 @@ input[type='submit']:hover {
   }
   .footer p {
     align-items: center;
+    font-size : 1em;
   }
 }
