@@ -1,28 +1,10 @@
-$(window).scroll(function () {
-  var wScroll = $(this).scrollTop();
+let btn = document.querySelector('#btn');
+let sidebar = document.querySelector('.sidebar');
 
-  console.log(wScroll);
+btn.onclick = function () {
+  sidebar.classList.toggle('active');
+};
 
-  $('#pg').css({
-    transform: 'translate(0px, ' + wScroll / 20 + '%)',
-  });
-});
-
-$(window).scroll(function () {
-  var wScroll = $(this).scrollTop();
-
-  $('#ig').css({
-    transform: 'translate(0px, ' + wScroll / 30 + '%)',
-  });
-});
-
-$(window).scroll(function () {
-  var wScroll = $(this).scrollTop();
-
-  $('#po').css({
-    transform: 'translate(0px, ' + wScroll / 40 + '%)',
-  });
-});
 $(window).scroll(function () {
   var wScroll = $(this).scrollTop();
 
@@ -63,3 +45,12 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
+document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('portfolio-item')) {
+    const src = e.target.getAttribute('src');
+    document.querySelector('.modal-img').src = src;
+    const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+    myModal.show();
+  }
+});
+AOS.init();
